@@ -1,6 +1,6 @@
-import sImage from "../images/Intro_Brain.svg"
 import aImage from "../images/Intro_Featured_Image_Empty.svg"
 import bImage from "../images/Intro_Front_Layer.svg"
+import cImage from "../images/Intro_Brain.svg"
 import Snowfall from 'react-snowfall'
 import {Updown_animation} from '../anims/Updown_animation'
 import {Blinking_animation} from '../anims/Blinking_animation'
@@ -22,9 +22,9 @@ export const FirstPortion = ()=> {
 
 
         <div className="header-container-image" >
-          <img src={sImage} ref={Updown_animation().ref} />
-          <img src={bImage} ref={Blinking_animation().ref}/>
-          <img src={aImage} />
+          <img src={cImage} alt="image Loading" ref={Updown_animation().ref} />
+          <img src={bImage} alt="image Loading" ref={Blinking_animation().ref}/>
+          <img src={aImage} alt="image Loading" />
 
         </div>
       </div>
