@@ -22,9 +22,9 @@ export const FirstPortion = ()=> {
 
 
         <div className="header-container-image" >
-          <img src={cImage} alt="image Loading" ref={Updown_animation().ref} />
-          <img src={bImage} alt="image Loading" ref={Blinking_animation().ref}/>
-          <img src={aImage} alt="image Loading" />
+          <img src={cImage} alt="" ref={Updown_animation().ref} />
+          <img src={bImage} alt="" ref={Blinking_animation().ref}/>
+          <img src={aImage} alt="" />
 
         </div>
       </div>

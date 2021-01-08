@@ -7,7 +7,7 @@ export const SecondPortion = ()=> {
         <div className="box2">
 
 
-        <img src={winter_house} className="leftAlign_image" />
+        <img src={winter_house}  className="leftAlign_image" alt= "" />
         <div className="rightAlign_items">
           <h1 style={{ color: "orange" }}  >Blow Blow Thou Winter Wind</h1>
           <br />
