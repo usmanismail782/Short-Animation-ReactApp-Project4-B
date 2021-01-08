@@ -1,38 +1,33 @@
 import React from 'react';
 import './App.css';
-import useWebAnimations from "@wellyshen/use-web-animations";
+import { NavBar } from './NavBar'
+import { FirstPortion } from './components/FirstPortion'
+import { LastPortion } from './components/LastPortion'
+import { SecondPortion } from './components/SecondPortion'
+
+
 function App() {
 
 
 
-  const background1Movement = useWebAnimations({
-    keyframes:  [
-                    { transform: "rotate(360deg)", background: "red"},  
-                   ],
-    timing: {
-      duration: 4000,
-      iterations: Infinity
-     
-    }
-  });
-
-  const speedUp = () => {
-    
-   const animation = background1Movement.getAnimation()
-
-    if(animation.playState === "running")
-   { animation.pause()}
-    else
-    onMo
-    {animation.play()}
-
-  };
-
- 
+  const vert_align = {
+    display: 'flex',
+    flexDirection: 'column'
+  }
 
   return (
-  
-      <div className="square" id="foreground1" ref={background1Movement.ref}  ></div>
+
+    <div className="body">
+
+          <div style={vert_align} fixed='top'>
+            <NavBar />
+          </div>
+
+          <FirstPortion />
+          <SecondPortion />
+          <LastPortion />
+
+    </div>
 
   );
 }
