@@ -41,4 +41,4 @@ jobs:
         run: npm install -g surge
 
       - name: deploying on surge
-        run: surge ./build shortanimation-bootcamp-project-4b-usman782.surge.sh  --token ${{secrets.SURGE_TOKEN_P4B}}
+        run: surge ./build http://shortanimation-bootcamp-project-4b-usman782.surge.sh/ --token ${{secrets.SURGE_TOKEN_P4B}}
