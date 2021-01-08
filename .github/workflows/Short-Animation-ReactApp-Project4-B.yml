@@ -38,7 +38,7 @@ jobs:
         run:  yarn build
 
       - name: installing surge
-        run: yarn global add surge
+        run: npm install -g surge
 
       - name: deploying on surge
         run: surge ./build shortanimation-bootcamp-project-4b-usman782.surge.sh  --token ${{secrets.SURGE_TOKEN_P4B}}
